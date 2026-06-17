@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arturo Heredia — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style_portafolio.css"/>
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav>
+    <div class="nav-logo">arturo<span>.</span>dev</div>
+    <ul class="nav-links">
+      <li><a href="#about">sobre mí</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#hobbies">hobbies</a></li>
+      <li><a href="#education">educación</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+
+      <div class="hero-tag">// Estudiante &amp; Developer</div>
+
+      <h1 class="hero-name">
+        Arturo<br/>
+        <span class="highlight">Heredia</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        17 años · Córdoba, Argentina<br/>
+        Estudiante en <span>IPET Nº57</span> · Apasionado del código y los videojuegos
+      </p>
+
+      <!-- Terminal animada -->
+      <div class="terminal" id="terminal">
+        <div class="terminal-bar">
+          <div class="dot dot-r"></div>
+          <div class="dot dot-y"></div>
+          <div class="dot dot-g"></div>
+          <span class="terminal-title">arturo@dev ~ bash</span>
+        </div>
+        <div class="terminal-body" id="terminal-body">
+          <div class="t-line">
+            <span class="t-prompt">~$</span>
+            <span class="t-cmd" id="typing-cmd"></span>
+            <span class="t-cursor" id="cursor"></span>
+          </div>
+          <div id="terminal-output"></div>
+        </div>
+      </div>
+
+      <div class="cta-row">
+        <a href="#skills" class="btn btn-primary">ver mis skills</a>
+        <a href="#about"  class="btn btn-ghost">sobre mí</a>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider"/>
+
+  <!-- ── SOBRE MÍ ── -->
+  <section id="about">
+    <p class="section-label">// 01 — Sobre mí</p>
+    <h2 class="section-title">Quién <span>soy</span></h2>
+    <div class="about-grid fade-in">
+      <div class="info-card">
+        <div class="label">Nombre completo</div>
+        <div class="value">Arturo Nicolás Heredia</div>
+      </div>
+      <div class="info-card">
+        <div class="label">Fecha de nacimiento</div>
+        <div class="value"><span class="accent">07/11/2008</span></div>
+      </div>
+      <div class="info-card">
+        <div class="label">Edad</div>
+        <div class="value"><span class="accent">17</span> años</div>
+      </div>
+      <div class="info-card">
+        <div class="label">Ubicación</div>
+        <div class="value">Córdoba, Argentina</div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider"/>
+
+  <!-- ── SKILLS ── -->
+  <section id="skills">
+    <p class="section-label">// 02 — Tecnologías</p>
+    <h2 class="section-title">Lenguajes <span>&amp; herramientas</span></h2>
+    <div class="skills-grid fade-in">
+
+      <div class="skill-card python">
+        <div class="skill-icon">🐍</div>
+        <div class="skill-name">Python</div>
+        <div class="skill-desc">Lenguaje principal. Lógica, scripts, automatizaciones y proyectos de la especialidad técnica.</div>
+        <span class="skill-badge">LENGUAJE</span>
+      </div>
+
+      <div class="skill-card flet">
+        <div class="skill-icon">⚡</div>
+        <div class="skill-name">Flet</div>
+        <div class="skill-desc">Framework de Python para construir apps de escritorio y web con una sola base de código.</div>
+        <span class="skill-badge">FRAMEWORK</span>
+      </div>
+
+      <div class="skill-card html">
+        <div class="skill-icon">🌐</div>
+        <div class="skill-name">HTML</div>
+        <div class="skill-desc">Estructura de páginas web. Base del desarrollo front-end y proyectos web personales.</div>
+        <span class="skill-badge">MARKUP</span>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider"/>
+
+  <!-- ── HOBBIES ── -->
+  <section id="hobbies">
+    <p class="section-label">// 03 — Hobbies</p>
+    <h2 class="section-title">Lo que me <span>gusta</span></h2>
+    <div class="hobbies-list fade-in">
+
+      <div class="hobby-item">
+        <div class="hobby-icon">🔫</div>
+        <div>
+          <div class="hobby-name">Counter-Strike 2</div>
+          <div class="hobby-detail">FPS táctico. Aim, estrategia y trabajo en equipo a nivel competitivo.</div>
+        </div>
+      </div>
+
+      <div class="hobby-item">
+        <div class="hobby-icon">🔷</div>
+        <div>
+          <div class="hobby-name">Geometry Dash</div>
+          <div class="hobby-detail">Plataformer de ritmo. Reflejos extremos, niveles custom y música épica.</div>
+        </div>
+      </div>
+
+      <div class="hobby-item">
+        <div class="hobby-icon">💻</div>
+        <div>
+          <div class="hobby-name">Programar</div>
+          <div class="hobby-detail">Construir cosas desde cero. Desde scripts en Python hasta interfaces web.</div>
+        </div>
+      </div>
+
+      <div class="hobby-item">
+        <div class="hobby-icon">🔧</div>
+        <div>
+          <div class="hobby-name">Especialidad técnica</div>
+          <div class="hobby-detail">Aprendizaje técnico en el IPET: electrónica, programación y más.</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider"/>
+
+  <!-- ── EDUCACIÓN ── -->
+  <section id="education">
+    <p class="section-label">// 04 — Educación</p>
+    <h2 class="section-title">Dónde <span>estudio</span></h2>
+    <div class="edu-block fade-in">
+      <div class="edu-year">2024 — Presente</div>
+      <div class="edu-school">IPET Nº57 &quot;Comodoro Martín Rivadavia&quot;</div>
+      <div class="edu-location">Córdoba, Argentina · <span>Especialidad técnica</span></div>
+    </div>
+  </section>
+
+  <!-- ── CONTACTO ── -->
+  <section id="contact">
+    <p class="section-label">// 05 — Contacto</p>
+    <h2 class="section-title">¿Hablamos <span>?</span></h2>
+    <p>¿Querés colaborar en un proyecto, o simplemente charlar sobre código y videojuegos? ¡Mandame un mensaje!</p>
+    <a href="mailto:arturo@example.com" class="btn btn-primary">Mandar mensaje</a>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <p>Hecho con <span>❤</span> por Arturo Nicolás Heredia · 2025</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
