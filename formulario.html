@@ -18,35 +18,158 @@
             <a href="boostrap.html">Boostrap</a>
             <a href="portfolio.html">Portfolio</a>
             <a href="index.html">Inicio</a>
+            <style>
+                form{
+                    background-color: tomato;
+                    margin-left: 500px;
+                    width: 350px;
+                    height: 250px;
+                    margin-top: 15px;
+                }
+
+                form h1{
+                    color: rgb(0, 0, 0);
+                    text-align: center;
+                    font-family:'Courier New', Courier, monospace
+                }
+
+                form label{
+                    color: rgb(0, 0, 0);
+                }
+
+                form button{
+                    background-color: salmon;
+                    color: white;
+                    font-size: 20px;
+                    margin-left: 100px;
+                    padding:5px;
+                }
+                /* ========================= */
+/* RESPONSIVE TABLET */
+/* ========================= */
+
+@media (max-width: 1024px){
+
+    header{
+        padding-bottom: 20px;
+    }
+
+    header img{
+        position: static;
+        display: block;
+        margin: auto;
+    }
+
+    header h1{
+        font-size: 28px;
+        margin-top: 10px;
+    }
+
+    nav{
+        margin-left: 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    nav a{
+        display: inline-block;
+        margin: 5px;
+        font-size: 20px;
+    }
+
+    ol,
+    ul{
+        width: 80%;
+        font-size: 20px;
+    }
+}
+
+/* ========================= */
+/* RESPONSIVE CELULAR */
+/* ========================= */
+
+@media (max-width: 600px){
+
+    header h1{
+        font-size: 22px;
+    }
+
+    nav a{
+        display: block;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    ol,
+    ul{
+        width: 90%;
+        padding: 15px;
+        font-size: 17px;
+    }
+
+    li{
+        margin: 8px 0;
+    }
+
+    hr{
+        width: 90%;
+    }
+
+    header img{
+        width: 80px;
+        height: 80px;
+    }
+}
+            </style>
         </nav>
     </header>
     
-    <h1>Formulario </h1>
     <form>
+        <h1>Formulario </h1>
         <label for="">Nombre</label>
-        <input type="text" placeholder="NOMBRE"><br>
+        <input type="text" id="nombre" placeholder="NOMBRE"><br>
         <label for="">Apellido</label>
-        <input type="text" placeholder="Apellido"><br>
+        <input type="text" id="apellido" placeholder="Apellido"><br>
         <label for="">Edad</label>
-        <input type="text"><br>
+        <input type="text" id="edad"><br>
         <label for="">Email</label>
-        <input type="email" name="" id=""><br>
+        <input type="email" name="" id="email"><br>
         <label for="">Fecha de nacimiento</label>
-        <input type="datetime-local" name="" id=""><br>
+        <input type="datetime-local" name="" id="fecha"><br>
         <label for="">Genero</label>
-        <input type="checkbox" name="" id="">Masculino
-        <input type="checkbox" name="" id="">Femenino
+        <input type="checkbox" name="" id="hombre">Masculino
+        <input type="checkbox" name="" id="mujer">Femenino
         <br>
         <label for="">Programador</label>
-        <select name="" id="">
+        <select name="" id="opcion">
             <option value="">Eliga una opcion</option>
-            <option value="">Des FRONTEND</option>
-            <option value="">Des BACKEND</option>
-            <option value="">Lider de equipo</option>
-            <option value="">Senior PYTHON</option>
-        </select><br>
-        <input type="button" value="Guardar">
+            <option value="Des Frontend">Des FRONTEND</option>
+            <option value="Des backend">Des BACKEND</option>
+            <option value="LIDER">Lider de equipo</option>
+            <option value="SENIOR PYTHON">Senior PYTHON</option>
+        </select><br><br>
+        <input type="button" value="Guardar" onclick="guardar()">
+        
     </form>
+    <br><br>
+    
+    <section class="mensaje" id="mensaje">
+
+    </section>
 
 </body>
 </html>
+
+<script>
+function guardar(){
+    let nombre= document.getElementById("nombre").value;
+    let apellido= document.getElementById("apellido").value;
+    let edad= document.getElementById("edad").value;
+    let email= document.getElementById("email").value;
+    let fecha= document.getElementById("fecha").value;
+    let opcion= document.getElementById("opcion").value;
+    document.getElementById("mensaje").innerHTML = 
+    "Bienvenido"+ nombre + apellido + "<br/> " + edad + "<br/>" + email 
+    + "<br/>" + fecha + "<br/>" + opcion;
+}
+</script>
